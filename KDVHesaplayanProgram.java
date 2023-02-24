@@ -9,10 +9,17 @@ public class KDVHesaplayanProgram {
         tutar = input.nextDouble();
 
         // KDV Hesaplama
-        double KDVTutari = tutar * 0.18;
-        System.out.println("KDV Tutarı : " + KDVTutari);
-        double VergiliTutar = tutar + KDVTutari;
-        System.out.println("Vergili Tutar : " + VergiliTutar);
+        boolean kosul = tutar >= 1000;
+        double kdvOrani = kosul ? 0.18 : 0.08;
+        double kdvlitutar = (tutar * kdvOrani) + tutar;
+
+        System.out.println("KDV Oranı : " + kdvOrani);
+        System.out.println("KDV'li tutar : " + kdvlitutar);
+
+
+
+
+
 
     }
 }
