@@ -17,6 +17,8 @@ public class DikUcgendeHipotenusBulanProgram {
         System.out.println(c);
 
 
+
+
         
     }
 }
